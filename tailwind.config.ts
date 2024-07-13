@@ -32,7 +32,8 @@ const config: Config = {
         'secondary': 'rgba(var(--secondary-rgb))',
         'tertiary': 'rgba(var(--tertiary-rgb))',
         'highlight': 'rgba(var(--highlight-rgb))',
-        'label-bg': '#d9d9d9'
+        'label-bg': '#d9d9d9',
+        'edu-icon-bg': '#9F199F',
       }
     },
   },
