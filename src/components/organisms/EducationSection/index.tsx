@@ -28,7 +28,7 @@ const Education = [
 
 const EducationSection = () => {
   return (
-    <section id='experience' className='p-section-padding py-14 gap-5'>
+    <section id='education' className='w-full p-section-padding py-14 gap-5'>
         <Heading1>Education</Heading1>
         <div className='my-20'>
             {Education.map((edu, index) => (

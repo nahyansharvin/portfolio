@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const HeroSection = () => {
   return (
-    <section id='hero' className='bg-hero-gradient bg-right-top bg-no-repeat p-section-padding py-44 h-screen overflow-hidden flex'>
+    <section id='hero' className='w-full bg-hero-gradient bg-right-top bg-no-repeat p-section-padding py-44 h-screen overflow-hidden flex'>
       <div>
         <Heading2 className='uppercase opacity-60 tracking-wider'>Software Developer</Heading2>
         <Heading1>Nahyan Sharvin</Heading1>

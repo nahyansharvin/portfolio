@@ -43,7 +43,7 @@ const experiences = [
 
 const Experiences = () => {
     return (
-        <section id='experience' className='p-section-padding py-10 gap-5'>
+        <section id='experience' className='w-full p-section-padding py-10 gap-5'>
             <Heading1>Experiences</Heading1>
             <Heading2 className='text-xl mt-2 font-display opacity-60'>Here is a quick summary of my most recent experiences</Heading2>
 

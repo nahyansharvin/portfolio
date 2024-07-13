@@ -4,7 +4,7 @@ import Heading1 from '@/components/atoms/Heading/Heading1'
 
 const AboutMe = () => {
   return (
-    <section id='about' className='p-section-padding py-40 flex gap-5'>
+    <section id='about' className='w-full p-section-padding py-40 flex gap-5'>
         <div className='relative py-2 flex-initial'>
             <Image src='/images/about-image.png' alt='About Image' width={440} height={100} />
             <Image src='/images/sphere.png' alt='Sphere' width={90} height={10} className='absolute bottom-8 -left-2 -rotate-90' />
