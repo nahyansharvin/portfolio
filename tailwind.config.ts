@@ -34,6 +34,7 @@ const config: Config = {
         'background': 'rgba(var(--background-rgb))',
         'secondary': 'rgba(var(--secondary-rgb))',
         'tertiary': 'rgba(var(--tertiary-rgb))',
+        'highlight': 'rgba(var(--highlight-rgb))',
       }
     },
   },
