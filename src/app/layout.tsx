@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.variable} ${clashDisplay.variable} font-sans min-h-dvh`}>{children}</body>
+      <body className={`${rubik.variable} ${clashDisplay.variable} font-sans min-h-dvh px-48`}>{children}</body>
     </html>
   );
 }
