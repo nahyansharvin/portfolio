@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      padding: {
+        'section-padding': '0 12rem'
+      },
       fontFamily: {
         sans: ['var(--font-rubik)'],
         display: ['var(--font-clash-display)'],
@@ -21,10 +24,17 @@ const config: Config = {
         }],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'hero-gradient': 'url("/images/hero-gradient.png")',
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'foreground': 'rgba(var(--foreground-rgb))',
+        'background': 'rgba(var(--background-rgb))',
+        'secondary': 'rgba(var(--secondary-rgb))',
+        'tertiary': 'rgba(var(--tertiary-rgb))',
+      }
     },
   },
   plugins: [],
