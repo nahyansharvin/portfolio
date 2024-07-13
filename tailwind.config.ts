@@ -12,6 +12,14 @@ const config: Config = {
         sans: ['var(--font-rubik)'],
         display: ['var(--font-clash-display)'],
       },
+      fontSize: {
+        '9xl': ['8rem', {
+          lineHeight: '0.81'
+        }],
+        '10xl': ['9.875rem', {
+          lineHeight: '0.81'
+        }],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
