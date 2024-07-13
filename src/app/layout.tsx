@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Rubik } from 'next/font/google'
 import localFont from 'next/font/local'
 import './globals.css'
+import Navbar from '@/components/molecules/Navbar'
 
 const rubik = Rubik({ subsets: ['latin'], variable: '--font-rubik' })
 const clashDisplay = localFont({ src: '/fonts/ClashDisplay.woff2', variable: '--font-clash-display'})
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${rubik.variable} ${clashDisplay.variable} font-sans min-h-dvh`}>{children}</body>
+      <body className={`${rubik.variable} ${clashDisplay.variable} font-sans min-h-dvh`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
