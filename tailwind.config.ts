@@ -19,9 +19,6 @@ const config: Config = {
         '9xl': ['8rem', {
           lineHeight: '0.81'
         }],
-        '10xl': ['9.875rem', {
-          lineHeight: '0.81'
-        }],
       },
       backgroundImage: {
         'hero-gradient': 'url("/images/hero-gradient.png")',
@@ -35,6 +32,7 @@ const config: Config = {
         'secondary': 'rgba(var(--secondary-rgb))',
         'tertiary': 'rgba(var(--tertiary-rgb))',
         'highlight': 'rgba(var(--highlight-rgb))',
+        'label-bg': '#d9d9d9'
       }
     },
   },
