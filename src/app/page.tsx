@@ -1,3 +1,5 @@
+import FollowMe from "@/components/molecules/FollowMe";
+import Footer from "@/components/molecules/Footer";
 import AboutMe from "@/components/organisms/AboutMeSection";
 import EducationSection from "@/components/organisms/EducationSection";
 import Experiences from "@/components/organisms/ExperienceSection";
@@ -15,6 +17,8 @@ export default function Home() {
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
+      <FollowMe />
+      <Footer />
     </main>
   );
 }
