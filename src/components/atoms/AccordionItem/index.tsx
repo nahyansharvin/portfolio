@@ -40,12 +40,12 @@ const AccordionItem: React.FC<AccordionItemProps> = (props) => {
                 <div className='border-t border-foreground/30 mt-2 pt-2'>
                     <div className='flex gap-8 font-light'>
                         <div id='location' className='flex gap-2'>
-                            <Image src='/icons/location.svg' width={20} height={20} alt='Location icon' />
+                            <Image src='/icons/location.svg' width={20} height={20} alt='Location icon' className='opacity-70'/>
                             <p>{props.location}</p>
                         </div>
                         {props.url && (
                             <a href={props.url} id='url' className='flex gap-2'>
-                                <Image src='/icons/link.svg' width={20} height={20} alt='Link icon' />
+                                <Image src='/icons/link.svg' width={20} height={20} alt='Link icon' className='opacity-70'/>
                                 <p>{props.urlName}</p>
                             </a>
                         )}
