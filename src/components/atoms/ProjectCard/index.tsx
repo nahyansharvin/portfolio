@@ -15,9 +15,9 @@ type ProjectCardProps = {
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     return (
         <div className='flex gap-3'>
-            <div id='thumbnail' className='w-[35%] rounded-2xl overflow-hidden'>
-                <Image src='/images/hero-gradient.png' alt='Project Thumbnail' width={500} height={200} className='object-cover' />
-            </div>
+            {/* <div id='thumbnail' className='w-[35%] rounded-2xl overflow-hidden'>
+            </div> */}
+                <Image src={props.thumbnail} alt='Project Thumbnail' width={400} height={200} className='object-cover rounded-2xl max-h-64' />
             <div className='md:w-[50%] p-4 py-6'>
                 <h3 className='text-3xl font-display font-medium'>{props.name}</h3>
                 <h4 className='font-display font-light text-foreground/50 after:h-[3px] after:w-32 after:mt-1 after:absolute after:block after:bg-secondary'>{props.type}</h4>
