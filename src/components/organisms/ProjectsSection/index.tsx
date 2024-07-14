@@ -47,7 +47,7 @@ const ProjectsSection = () => {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-      <div className='w-full flex justify-center text-secondary underline underline-offset-4'>
+      <div className='text-center text-secondary underline underline-offset-4'>
         <a href="">see more projects {'>>'}</a>
       </div>
     </section>
