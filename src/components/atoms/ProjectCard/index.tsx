@@ -27,7 +27,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
                 </p>
                 <div id='links' className='flex gap-3 text-sky-600 underline underline-offset-4'>
                     {props.links.map((link, index) => (
-                        <a key={index} href={link.href}>{link.name}</a>
+                        <a key={index} href={link.href} target='_blank'>{link.name}</a>
                     ))}
                 </div>
             </div>
