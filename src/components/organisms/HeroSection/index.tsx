@@ -5,6 +5,8 @@ import Image from 'next/image'
 import SocialMedia from '@/constants/SocialMedia'
 import Link from 'next/link'
 
+const resumeUrl = 'https://drive.google.com/drive/folders/1Ib2G--UuOfy4UM9q0FwGL8bt1c4abW5o?usp=sharing'
+
 const HeroSection = () => {
   return (
     <section id='hero' className='w-full bg-hero-gradient bg-right bg-no-repeat bg-contain p-section-padding py-44 h-screen overflow-hidden flex'>
@@ -20,10 +22,15 @@ const HeroSection = () => {
       </div>
       <div className='relative'>
         {/* Download CV button */}
-        <a href='#' className='absolute top-48 left-9 bg-secondary text-white font-display font-medium text-lg px-5 p-1.5 rounded-full'>
-          <Image src='/icons/download-icon.svg' width={28} height={28} alt='Download Icon' />
-          CV
-        </a>
+        <div className='absolute top-48 left-6'>
+          <div className='relative h-20 w-20'>
+            <div className='animate-ping absolute inline-flex w-full h-full rounded-full bg-secondary/15' />
+            <a href={resumeUrl} target='_blank' className='relative inline-flex flex-col w-full h-full items-center justify-center bg-secondary text-white font-display font-medium text-xl rounded-full'>
+              <Image src='/icons/download-icon.svg' width={28} height={28} alt='Download Icon' />
+              CV
+            </a>
+          </div>
+        </div>
         <Image src='/images/hero-image-full.png' width={1000} height={500} alt='Hero Image' className='mt-5' priority />
       </div>
       <div className='absolute right-10 top-[50%] -translate-y-1/2 grid gap-4'>
