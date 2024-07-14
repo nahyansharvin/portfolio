@@ -2,6 +2,8 @@ import React from 'react'
 import Heading1 from '@/components/atoms/Heading/Heading1'
 import Heading2 from '@/components/atoms/Heading/Heading2'
 import Image from 'next/image'
+import SocialMedia from '@/constants/SocialMedia'
+import Link from 'next/link'
 
 const HeroSection = () => {
   return (
@@ -18,6 +20,18 @@ const HeroSection = () => {
           CV
         </a>
         <Image src='/images/hero-image-full.png' width={1000} height={500} alt='Hero Image' className='mt-5' priority />
+      </div>
+      <div className='absolute right-10 top-[50%] -translate-y-1/2 grid gap-4'>
+        {SocialMedia.map((social, index) => (
+          <Link
+            key={index}
+            href={social.url}
+            target='_blank'
+            rel='noreferrer'
+          >
+            <Image src={social.icon} alt={social.name} width={40} height={40} />
+          </Link>
+        ))}
       </div>
     </section>
   )
