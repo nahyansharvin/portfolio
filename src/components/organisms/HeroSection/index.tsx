@@ -7,11 +7,16 @@ import Link from 'next/link'
 
 const HeroSection = () => {
   return (
-    <section id='hero' className='w-full bg-hero-gradient bg-right-top bg-no-repeat p-section-padding py-44 h-screen overflow-hidden flex'>
+    <section id='hero' className='w-full bg-hero-gradient bg-right bg-no-repeat bg-contain p-section-padding py-44 h-screen overflow-hidden flex'>
+      <div className='absolute -left-2 top-[50%] -translate-y-1/2 grid gap-12'>
+        {Array(5).fill(0).map((_) => (
+          <div className='h-1 w-9 bg-secondary rotate-[35deg]' />
+        ))}
+      </div>
       <div>
         <Heading2 className='uppercase opacity-60 tracking-wider'>Software Developer</Heading2>
         <Heading1>Nahyan Sharvin</Heading1>
-        <p className='font-light leading-normal text-xl max-w-md pl-7 mt-20 border-l border-foreground/50 opacity-60'>I'm a self taught software engineer and designer based in Kerala, India. I love building applications and solving problems.</p>
+        <p className='font-light leading-normal text-xl max-w-sm pl-7 mt-20 border-l border-foreground/50 opacity-60'>I'm a self taught software engineer and designer based in Kerala, India. I love building applications and solving problems.</p>
       </div>
       <div className='relative'>
         {/* Download CV button */}
