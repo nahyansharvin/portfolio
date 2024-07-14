@@ -17,7 +17,7 @@ const navList = [
 
 const Navbar = () => {
   return (
-    <div className='absolute top-0 left-0 w-full flex justify-center'>
+    <header className='absolute top-0 left-0 w-full flex justify-center'>
         <nav className='w-11/12 h-14 mt-8 p-2 flex items-center justify-between rounded-full bg-background border border-highlight/50'>
             <h3 id='logo' className='ml-5 font-display font-medium text-xl'>Nahyan Sharvin</h3>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                 <button className='bg-tertiary px-10 h-10 rounded-full font-medium text-white'>Hire Me</button>
             </div>
         </nav>
-    </div>
+    </header>
   )
 }
 
