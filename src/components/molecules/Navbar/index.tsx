@@ -1,19 +1,5 @@
 import React from 'react'
-
-const navList = [
-    {
-        name: 'Home',
-        url: '#hero-section'
-    },
-    {
-        name: 'Projects',
-        url: '#projects-section'
-    },
-    {
-        name: 'Contact',
-        url: '#contact-section'
-    }
-]
+import NavLinks from '@/constants/Navlinks'
 
 const Navbar = () => {
   return (
@@ -22,7 +8,7 @@ const Navbar = () => {
             <h3 id='logo' className='ml-5 font-display font-medium text-xl'>Nahyan Sharvin</h3>
 
             <ul id='nav-links' className='flex gap-8'>
-                {navList.map((navItem, index) => (
+                {NavLinks.map((navItem, index) => (
                     <li key={index} className=''>
                         <a href={navItem.url}
                             className='text-foreground'>{navItem.name}</a>
